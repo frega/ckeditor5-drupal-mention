@@ -41,14 +41,11 @@ export default class DrupalMention extends Mention {
             view: {
                 name: 'span',
                 key: 'data-mention',
-                classes: 'mention',
-                attributes: {
-                    href: true
-                }
+                classes: 'mention'
             },
             model: {
                 key: 'mention',
-                value: viewItem => this.editor.plugins.get( 'Mention' ).toMentionAttribute( viewItem )
+                value: viewItem => this.editor.plugins.get( 'DrupalMention' ).toMentionAttribute( viewItem )
             },
             converterPriority: 'high'
         } );
@@ -61,11 +58,9 @@ export default class DrupalMention extends Mention {
                     return;
                 }
 
-                let href;
                 return viewWriter.createAttributeElement( 'span', {
                     class: 'mention',
-                    'data-mention': modelAttributeValue.id,
-                    href
+                    'data-mention': modelAttributeValue.id
                 } );
             },
             converterPriority: 'high'
