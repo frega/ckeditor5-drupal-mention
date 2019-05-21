@@ -46,9 +46,9 @@ let mention = {
         {
             marker: '!',
             feed: [
-                '!0', '!1', '!2'
+                '!0', '!1', '!2', '!0:2',
             ],
-            validCharacters: '0-9',
+            validCharacters: '0-9:',
         }
     ]
 };

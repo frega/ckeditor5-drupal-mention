@@ -1,6 +1,6 @@
 {
   "name": "@frega/ckeditor5-drupal-mention",
-  "version": "10.0.2",
+  "version": "10.0.9",
   "description": "Drupal Mention feature for CKEditor 5.",
   "keywords": [
     "ckeditor",
